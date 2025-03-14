@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    
+    <title>
+        Startseite - MagicwolfMC
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+    <link href="/font/quicksand.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="/css/frontend/layout.css?time=123124" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <header class="py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="blog-header-logo text-dark" href="/">
+                    <img src="/img/logo.png" height="70" alt="MagicwolfMC Logo" style="border-width: 0;"/>
+                </a>
+            </div>
+            <div class="col-4 text-center"></div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <div class="btn-group" role="group" id="top_navigation_group" aria-label="Top Navigation">
+                    <a class="btn btn-sm btn-outline-primary" href="/">Startseite</a>
+                    <a class="btn btn-sm btn-outline-primary" href="/news">News</a>
+                    <a class="btn btn-sm btn-outline-primary" href="/team">Team</a>
+                    <a class="btn btn-sm btn-outline-primary" href="/faq">F.A.Q.</a>
+                    <a class="btn btn-sm btn-outline-primary" href="/contact">Kontakt</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="/login"><i class="fas fa-lock"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="container mb-4">
+    <a href="/item/top">
+        <img src="/img/header_image.png" id="page_header_image" class="text-white rounded bg-dark" width="100%" alt="Header"/>
+    </a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="server_selection" class="btn-group">
+                <a href="/server-switch/switch/1" class="btn btn-primary">1.8</a>
+                <a href="/server-switch/switch/4" class="btn btn-secondary">Cloud</a>
+            </div>
+            <h4 id="main_navigation_title">Itemkategorien</h4>
+            <div class="bg-dark rounded mb-4" id="feature_navigation">
+                <div class="list-group bg-dark rounded">
+                    <a href="/item/top" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                        <i class="fas fa-trophy"></i> Top Items
+                    </a>
+                    <a href="/item/featured" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                        <i class="fas fa-star"></i> aktuell beliebt
+                    </a>
+                    <a href="/item/lastupdated" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                        <i class="fas fa-clock"></i> zuletzt aktualisiert
+                    </a>
+                    <a href="/item/newest" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                        <i class="fas fa-plus"></i> neuste Items
+                    </a>
+                </div>
+            </div>
+            <nav class="bg-dark rounded mb-4 animated bounceInDown" id="main_navigation">
+                <ul>
+                    <!-- Hier können die Kategorien angepasst werden -->
+                    <li class="sub-menu">
+                        <a href="javascript:void(0)">
+                            MagicwolfMC-Items
+                            <div class='fa fa-chevron-down right'></div>
+                        </a>
+                        <ul>
+                            <li><a href="/item/category/3" id="nav_category_3">Übersicht</a></li>
+                            <li><a href="/item/category/1" id="nav_category_1">Exklusive Items</a></li>
+                            <li><a href="/item/category/5" id="nav_category_5">Tools & Nützliches</a></li>
+                        </ul>
+                    </li>
+                    <!-- Weitere Kategorien können hier hinzugefügt werden -->
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-7">
+                    <h4 id="content_title">
+                        Startseite
+                        <small></small>
+                    </h4>
+                </div>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <input type="search" name="searchQuery" id="searchQuery" placeholder="Nach Item suchen.." value="" class="form-control form-control-dark" />
+                        <button class="btn btn-outline-secondary" type="button" id="runSearch" title="Suchen">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="bg-dark rounded p-4 mb-4" id="main_content">
+                <div style="text-align: center;">
+                    <h4 class="mb-5 mt-4">Willkommen bei MagicwolfMC</h4>
+                    <p>MagicwolfMC bietet eine Plattform, auf der Du Orientierungshilfen zu den Preisen vieler Items des MagicwolfMC-Netzwerks finden kannst.</p>
+                    <p>Das MagicwolfMC-Team besteht aus engagierten Spielern, die unabhängig und ehrenamtlich den Markt auf MagicwolfMC beobachten und analysieren. Unsere Ergebnisse stellen wir hier für Dich bereit.</p>
+                    <p>Bitte beachte, dass unsere Preisangaben lediglich Richtwerte sind und keine festen Preise darstellen. Die letztendlichen Kauf- oder Verkaufspreise von Items liegen immer bei Dir und den beteiligten Spielern.</p>
+                    <p>Weitere Informationen zu unserer Arbeit findest Du in unserem FAQ-Bereich. Bei Fragen oder Anliegen erreichst Du uns über unser Discord-Ticket-System.</p>
+                    <p>Viele Grüße<br />Dein MagicwolfMC-Team</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="container">
+    <h4 class="content_title">MagicwolfMC Partner</h4>
+    <div class="row">
+        <div class="col-md-2 text-center">
+            <a href="https://community-radar.de/" title="CommunityRadar" target="_blank">
+                <img src="/img/partner/community_radar.png" height="125" alt="Partner Logo: CommunityRadar"/>
+            </a>
+        </div>
+    </div>
+</div>
+<footer class="container">
+    &copy; Copyright 2024 by MagicwolfMC | All rights reserved &bull; <a href="/imprint">Impressum</a> &bull; <a href="/privacy_policy">Datenschutzerklärung</a>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/linkifyjs@3.0.3/dist/linkify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/linkify-html@3.0.3/dist/linkify-html.min.js"></script>
+<script src="/lightbox/js/lightbox.min.js"></script>
+<script src="/js/frontend/layout.js"></script>
+</body>
+</html>
