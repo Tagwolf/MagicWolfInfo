@@ -1,0 +1,175 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    border-bottom: 3px solid #4CAF50;
+}
+
+header img {
+    max-height: 70px;
+}
+
+/* Navigation */
+#top_navigation_group .btn {
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#top_navigation_group .btn-outline-primary {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+#top_navigation_group .btn-outline-primary:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+#top_navigation_group .btn-outline-secondary {
+    border-color: #666;
+    color: #666;
+}
+
+#top_navigation_group .btn-outline-secondary:hover {
+    background-color: #666;
+    color: #ffffff;
+}
+
+/* Hauptinhalt */
+.container {
+    padding: 20px;
+}
+
+#page_header_image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main_navigation {
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main_navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main_navigation ul li {
+    margin: 10px 0;
+}
+
+#main_navigation ul li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#main_navigation ul li a:hover {
+    background-color: #4CAF50;
+}
+
+#main_navigation .sub-menu ul {
+    margin-left: 20px;
+}
+
+#main_navigation .sub-menu ul li a {
+    padding: 8px 15px;
+}
+
+/* Suchleiste */
+#searchQuery {
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#runSearch {
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+#runSearch:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #4CAF50;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #4CAF50;
+}
+
+footer a:hover {
+    color: #45a049;
+}
+
+/* Partnerbereich */
+#partner {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#partner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .col-4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #top_navigation_group {
+        justify-content: center;
+    }
+
+    #main_navigation {
+        margin-bottom: 20px;
+    }
+
+    #searchQuery {
+        width: 100%;
+    }
+}
