@@ -6,20 +6,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     
-    <title>
-        Startseite - MagicwolfMC
-    </title>
+    <title>Startseite - MagicwolfMC</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#000000">
-    <link href="/font/quicksand.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <meta name="msapplication-TileColor" content="#FF0000">
+    <meta name="theme-color" content="#FF0000">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href="/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="/css/frontend/layout.css?time=123124" rel="stylesheet" type="text/css" />
+
+    <!-- Eingebettete CSS-Stile -->
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #000000; /* Schwarzer Hintergrund */
+            color: #ffffff; /* Weiße Schrift */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #FF0000; /* Rot für Links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #cc0000; /* Dunkleres Rot beim Darüberfahren */
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #000000; /* Schwarzer Header */
+            padding: 10px 0;
+            border-bottom: 3px solid #FF0000;
+        }
+
+        header img {
+            max-height: 70px;
+        }
+
+        /* Navigation */
+        #top_navigation_group .btn {
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #top_navigation_group .btn-outline-primary {
+            border-color: #FF0000;
+            color: #FF0000;
+        }
+
+        #top_navigation_group .btn-outline-primary:hover {
+            background-color: #FF0000;
+            color: #ffffff;
+        }
+
+        #top_navigation_group .btn-outline-secondary {
+            border-color: #666;
+            color: #666;
+        }
+
+        #top_navigation_group .btn-outline-secondary:hover {
+            background-color: #666;
+            color: #ffffff;
+        }
+
+        /* Hauptinhalt */
+        .container {
+            padding: 20px;
+        }
+
+        #page_header_image {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Roter Schatten */
+        }
+
+        #main_navigation {
+            background-color: #1a1a1a; /* Dunkelgrauer Hintergrund für Navigation */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Roter Schatten */
+        }
+
+        #main_navigation ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #main_navigation ul li {
+            margin: 10px 0;
+        }
+
+        #main_navigation ul li a {
+            color: #FF0000; /* Rote Links */
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #main_navigation ul li a:hover {
+            background-color: #330000; /* Dunkelroter Hover-Effekt */
+        }
+
+        #main_navigation .sub-menu ul {
+            margin-left: 20px;
+        }
+
+        #main_navigation .sub-menu ul li a {
+            padding: 8px 15px;
+        }
+
+        /* Suchleiste */
+        #searchQuery {
+            border-radius: 5px;
+            border: 1px solid #FF0000;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        #runSearch {
+            border-radius: 5px;
+            border: 1px solid #FF0000;
+            background-color: #FF0000;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        #runSearch:hover {
+            background-color: #cc0000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000; /* Schwarzer Footer */
+            padding: 20px 0;
+            text-align: center;
+            border-top: 3px solid #FF0000;
+            margin-top: 20px;
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #FF0000;
+        }
+
+        footer a:hover {
+            color: #cc0000;
+        }
+
+        /* Partnerbereich */
+        #partner {
+            background-color: #1a1a1a; /* Dunkelgrauer Hintergrund für Partnerbereich */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Roter Schatten */
+        }
+
+        #partner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .col-4 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            #top_navigation_group {
+                justify-content: center;
+            }
+
+            #main_navigation {
+                margin-bottom: 20px;
+            }
+
+            #searchQuery {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -60,23 +236,22 @@
             <h4 id="main_navigation_title">Itemkategorien</h4>
             <div class="bg-dark rounded mb-4" id="feature_navigation">
                 <div class="list-group bg-dark rounded">
-                    <a href="/item/top" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                    <a href="/item/top" class="list-group-item bg-dark" style="color: #FF0000;">
                         <i class="fas fa-trophy"></i> Top Items
                     </a>
-                    <a href="/item/featured" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                    <a href="/item/featured" class="list-group-item bg-dark" style="color: #FF0000;">
                         <i class="fas fa-star"></i> aktuell beliebt
                     </a>
-                    <a href="/item/lastupdated" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                    <a href="/item/lastupdated" class="list-group-item bg-dark" style="color: #FF0000;">
                         <i class="fas fa-clock"></i> zuletzt aktualisiert
                     </a>
-                    <a href="/item/newest" class="list-group-item bg-dark" style="color: #FFFFFF;">
+                    <a href="/item/newest" class="list-group-item bg-dark" style="color: #FF0000;">
                         <i class="fas fa-plus"></i> neuste Items
                     </a>
                 </div>
             </div>
             <nav class="bg-dark rounded mb-4 animated bounceInDown" id="main_navigation">
                 <ul>
-                    <!-- Hier können die Kategorien angepasst werden -->
                     <li class="sub-menu">
                         <a href="javascript:void(0)">
                             MagicwolfMC-Items
@@ -88,7 +263,6 @@
                             <li><a href="/item/category/5" id="nav_category_5">Tools & Nützliches</a></li>
                         </ul>
                     </li>
-                    <!-- Weitere Kategorien können hier hinzugefügt werden -->
                 </ul>
             </nav>
         </div>
